@@ -52,6 +52,7 @@ public class Assertivas {
         assertNotEquals(s1, s3);
         assertNotEquals(s2, s3);
 
+//        fail("Mensagem de erro");
 
     }
 
