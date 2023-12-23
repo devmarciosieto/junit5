@@ -11,7 +11,8 @@ class CalculadoraTest {
         Calculadora calculadora = new Calculadora();
         assertEquals(2, calculadora.somar(1, 1));
         assertEquals(3, calculadora.somar(1, 2));
-        assertEquals(4, calculadora.somar(3, 1));
+        assertTrue( calculadora.somar(3, 1) == 4);
+        assertFalse( calculadora.somar(3, 1) == 5);
     }
 
 }
