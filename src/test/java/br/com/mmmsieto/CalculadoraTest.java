@@ -32,12 +32,14 @@ class CalculadoraTest {
     }
     @Test
     void somar() {
+
         System.out.println("contador " + ++contador);
         System.out.println("contador2 static " + ++contador2);
         assertEquals(2, calculadora.somar(1, 1));
         assertEquals(3, calculadora.somar(1, 2));
         assertTrue( calculadora.somar(3, 1) == 4);
         assertFalse( calculadora.somar(3, 1) == 5);
+
     }
 
     @Test
