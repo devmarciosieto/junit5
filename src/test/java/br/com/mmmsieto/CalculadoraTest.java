@@ -1,6 +1,6 @@
 package br.com.mmmsieto;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -10,6 +10,26 @@ class CalculadoraTest {
     private static int contador2 = 0;
 
     Calculadora calculadora = new Calculadora();
+
+    @BeforeEach
+    void setUp() {
+        System.out.println("---> @BeforeEach");
+    }
+
+    @AfterEach
+    void tearDown() {
+        System.out.println("---> @AfterEach");
+    }
+
+    @BeforeAll
+    static void beforeAll() {
+        System.out.println("---> @BeforeAll");
+    }
+
+    @AfterAll
+    static void afterAll() {
+        System.out.println("---> @AfterAll");
+    }
     @Test
     void somar() {
         System.out.println("contador " + ++contador);
