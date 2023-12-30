@@ -19,3 +19,9 @@ Isrc/main/java/br/com/mmmsieto/financial/domain/exceptions/Validation.java,8\3\
 Tsrc/main/java/br/com/mmmsieto/financial/domain/exceptions/NoStacktraceException.java,3\8\388850b5967dd02ba2ad884acc70013975c5816e
 ‚
 Rsrc/main/java/br/com/mmmsieto/financial/domain/exceptions/ValidationException.java,9\2\9294d23ab6e6551237e2f86c9c6b33259aac4dfc
+s
+Csrc/test/java/br/com/mmmsieto/financial/domain/entity/UserTest.java,8\8\88d48222d9b8b7efc13055891e62b5757d05f2c5
+x
+Hsrc/main/java/br/com/mmmsieto/financial/domain/builders/UserBuilder.java,5\f\5f14f8329d724235e7c207950463bea9fdd93056
+k
+;src/test/java/br/com/mmmsieto/builders/UserBuilderTest.java,f\0\f0f880cee28bb46e259d3e8469a86759bd859157
