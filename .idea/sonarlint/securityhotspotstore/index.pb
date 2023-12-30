@@ -5,3 +5,17 @@ b
 -src/test/java/br/com/mmmsieto/Assertivas.java,6\a\6aeb9f5dd196b1cf40920dc267db45f793615a8d
 ^
 .src/main/java/br/com/mmmsieto/Calculadora.java,d\a\da4c9cf4d10190dab69dc6eddb12da8d69cca430
+W
+'src/main/java/br/com/mmmsieto/Main.java,d\5\d5dc81249e1c28a36e8ac5b3f2aa39b5124fcbf5
+i
+9src/main/java/br/com/mmmsieto/calculator/Calculadora.java,1\0\101d4dfa33c49cb37fc94236d72b6b397afa9937
+m
+=src/test/java/br/com/mmmsieto/calculator/CalculadoraTest.java,4\f\4ff41c06a477676a84a976507c863e9ef45fef2c
+o
+?src/main/java/br/com/mmmsieto/financial/domain/entity/User.java,c\5\c595898684cffd33d1f8be85d6a4f7605e6f0a53
+y
+Isrc/main/java/br/com/mmmsieto/financial/domain/exceptions/Validation.java,8\3\838847f69c607f89b75ada83cee5bbf501ca98e0
+„
+Tsrc/main/java/br/com/mmmsieto/financial/domain/exceptions/NoStacktraceException.java,3\8\388850b5967dd02ba2ad884acc70013975c5816e
+‚
+Rsrc/main/java/br/com/mmmsieto/financial/domain/exceptions/ValidationException.java,9\2\9294d23ab6e6551237e2f86c9c6b33259aac4dfc

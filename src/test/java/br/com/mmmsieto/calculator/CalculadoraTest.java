@@ -1,5 +1,6 @@
-package br.com.mmmsieto;
+package br.com.mmmsieto.calculator;
 
+import br.com.mmmsieto.calculator.Calculadora;
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;

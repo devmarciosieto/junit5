@@ -1,4 +1,4 @@
-package br.com.mmmsieto;
+package br.com.mmmsieto.calculator;
 
 public class Calculadora {
 
