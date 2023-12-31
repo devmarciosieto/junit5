@@ -1,6 +1,5 @@
 package br.com.mmmsieto.calculator;
 
-import br.com.mmmsieto.calculator.Calculadora;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -120,7 +119,7 @@ class CalculadoraTest {
             "8, 4, 2",
             "10, 2, 5"
     })
-    void deveDividirCorretamente(int num, int den, int res) {
+    void deveDividirCorretamente(int num, int den, double res) {
         float resultado = calculadora.dividir(num, den);
         assertEquals(res, resultado);
     }
