@@ -5,6 +5,9 @@ import br.com.mmmsieto.builders.UserBuilderTest;
 import br.com.mmmsieto.financial.domain.exceptions.ValidationException;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvFileSource;
+import org.junit.jupiter.params.provider.CsvSource;
 
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -47,6 +50,58 @@ class UserTest {
     void should_throw_a_ValidationException_when_name_is_null() {
         var exception = assertThrows(ValidationException.class, () -> UserBuilderTest.builder().password(null).build());
         assertEquals("Password is required", exception.getMessage());
+    }
+
+    @ParameterizedTest(name = "[{index}] - {4}")
+    @CsvSource(value = {
+            "1, NULL, email@gmail.com, 123456, Name is required",
+            "1, name, NULL, 123456, Email is required",
+            "1, name, email@gmail.com, NULL, Password is required"
+    }, nullValues = "NULL")
+    void deveValidarCamposObrigatorios(
+            Long idParam,
+            String nameParam,
+            String emailParam,
+            String passwordParam,
+            String message
+    ) {
+
+        var exception = assertThrows(ValidationException.class, () ->
+                UserBuilderTest.builder()
+                        .id(idParam)
+                        .name(nameParam)
+                        .email(emailParam)
+                        .password(passwordParam)
+                        .build());
+
+        assertEquals(message, exception.getMessage());
+
+    }
+
+//    @ParameterizedTest(name = "[{index}] - {4}")
+//    @CsvFileSource(files = "src\\test\\resources\\camposObrigatoriosUsuario.csv"
+//        , nullValues = "NULL", numLinesToSkip = 1)
+    @ParameterizedTest
+    @CsvFileSource(files = "src\\test\\resources\\camposObrigatoriosUsuario.csv"
+            , nullValues = "NULL", useHeadersInDisplayName = true)
+    void deveValidarCamposObrigatoriosCsvFileSource(
+            Long idParam,
+            String nameParam,
+            String emailParam,
+            String passwordParam,
+            String message
+    ) {
+
+        var exception = assertThrows(ValidationException.class, () ->
+                UserBuilderTest.builder()
+                        .id(idParam)
+                        .name(nameParam)
+                        .email(emailParam)
+                        .password(passwordParam)
+                        .build());
+
+        assertEquals(message, exception.getMessage());
+
     }
 
 }

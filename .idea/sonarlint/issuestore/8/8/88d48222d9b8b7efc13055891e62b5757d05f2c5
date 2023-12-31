@@ -1,7 +1,11 @@
 
 
-java:S5778""bRefactor the code of the lambda to have only one invocation possibly throwing a runtime exception.(ìò‘¤8¦ûçË1
+java:S5778%"bRefactor the code of the lambda to have only one invocation possibly throwing a runtime exception.(ìò‘¤8›‹õ‹Ì1
 „
-java:S5778)"bRefactor the code of the lambda to have only one invocation possibly throwing a runtime exception.(ß”Ïãùÿÿÿÿ8óÅ“çË1
+java:S5778,"bRefactor the code of the lambda to have only one invocation possibly throwing a runtime exception.(ß”Ïãùÿÿÿÿ8œ‹õ‹Ì1
 
-java:S57780"bRefactor the code of the lambda to have only one invocation possibly throwing a runtime exception.(ÿÀÄ¢8˜ğ“çË1
+java:S57783"bRefactor the code of the lambda to have only one invocation possibly throwing a runtime exception.(ÿÀÄ¢8œ‹õ‹Ì1
+
+java:S5778E"bRefactor the code of the lambda to have only one invocation possibly throwing a runtime exception.(¬ñ½8œ‹õ‹Ì1
+
+java:S5778_"bRefactor the code of the lambda to have only one invocation possibly throwing a runtime exception.(¬ñ½8‹õ‹Ì1
