@@ -2,6 +2,9 @@ package br.com.mmmsieto.calculator;
 
 import br.com.mmmsieto.calculator.Calculadora;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -103,6 +106,23 @@ class CalculadoraTest {
                 assertThrows(ArithmeticException.class, () -> calculadora.dividir02(4, 0));
 
         assertEquals("/ by zero", exception.getMessage());
+    }
+
+    @ParameterizedTest
+    @ValueSource(strings = {"Teste1", "Teste2"})
+    void testStrings(String param) {
+        System.out.println(param);
+        assertNotNull(param);
+    }
+
+    @ParameterizedTest
+    @CsvSource(value = {
+            "8, 4, 2",
+            "10, 2, 5"
+    })
+    void deveDividirCorretamente(int num, int den, int res) {
+        float resultado = calculadora.dividir(num, den);
+        assertEquals(res, resultado);
     }
 
 }
