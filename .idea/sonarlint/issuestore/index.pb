@@ -33,3 +33,5 @@ Msrc/main/java/br/com/mmmsieto/financial/annotation/cache/ValidationCache.java,
 Ksrc/main/java/br/com/mmmsieto/financial/annotation/validator/Validator.java,6\1\61ce5de606719f8d8cb09058feb11c3b3ae5bc20
 p
 @src/main/java/br/com/mmmsieto/financial/service/UserService.java,2\f\2f1f9300f63a16abe1b9346a3a4ba399e8607a89
+v
+Fsrc/main/java/br/com/mmmsieto/financial/repository/UserRepository.java,5\5\554cce900f2e754d209b7cfa7020520eda249341
