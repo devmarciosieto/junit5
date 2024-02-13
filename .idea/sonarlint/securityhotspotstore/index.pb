@@ -22,6 +22,4 @@ k
 t
 Dsrc/test/java/br/com/mmmsieto/financial/domain/entity/ContaTest.java,1\4\1440b7f7b7a2884b6d698f63962f698c5d7e7982
 r
-Bsrc/test/java/br/com/mmmsieto/financial/domain/entity/Account.java,a\2\a23cf9b5c212c0762bf9918ce2853dd53a7c6d31
-r
 Bsrc/main/java/br/com/mmmsieto/financial/domain/entity/Account.java,8\1\817ee54b52b6009bd735d02ade13ae3ae4970702

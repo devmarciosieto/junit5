@@ -1,5 +1,7 @@
 package br.com.mmmsieto.financial.domain.entity;
 
+import br.com.mmmsieto.financial.domain.exceptions.ValidationException;
+
 import java.util.Objects;
 
 public class Account {
@@ -66,7 +68,18 @@ public class Account {
         }
 
         public Account build() {
+            validation();
             return new Account(id, name, user);
+        }
+
+        private void validation() {
+            if (this.name == null) {
+                throw new ValidationException("Name is mandatory");
+            }
+
+            if (this.user == null) {
+                throw new ValidationException("User is mandatory");
+            }
         }
 
     }
