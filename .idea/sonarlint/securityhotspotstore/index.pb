@@ -1,10 +1,6 @@
 
 ]
 -src/test/java/br/com/mmmsieto/Assertivas.java,6\a\6aeb9f5dd196b1cf40920dc267db45f793615a8d
-i
-9src/main/java/br/com/mmmsieto/calculator/Calculadora.java,1\0\101d4dfa33c49cb37fc94236d72b6b397afa9937
-m
-=src/test/java/br/com/mmmsieto/calculator/CalculadoraTest.java,4\f\4ff41c06a477676a84a976507c863e9ef45fef2c
 o
 ?src/main/java/br/com/mmmsieto/financial/domain/entity/User.java,c\5\c595898684cffd33d1f8be85d6a4f7605e6f0a53
 „
@@ -35,3 +31,5 @@ Asrc/main/java/br/com/mmmsieto/financial/annotation/Mandatory.java,e\0\e0c2eed5
 Msrc/main/java/br/com/mmmsieto/financial/annotation/cache/ValidationCache.java,c\e\ce460e64fc5f179880b3e246cc8bf51800076e9d
 {
 Ksrc/main/java/br/com/mmmsieto/financial/annotation/validator/Validator.java,6\1\61ce5de606719f8d8cb09058feb11c3b3ae5bc20
+p
+@src/main/java/br/com/mmmsieto/financial/service/UserService.java,2\f\2f1f9300f63a16abe1b9346a3a4ba399e8607a89
