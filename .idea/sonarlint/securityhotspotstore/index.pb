@@ -23,3 +23,15 @@ t
 Dsrc/test/java/br/com/mmmsieto/financial/domain/entity/ContaTest.java,1\4\1440b7f7b7a2884b6d698f63962f698c5d7e7982
 r
 Bsrc/main/java/br/com/mmmsieto/financial/domain/entity/Account.java,8\1\817ee54b52b6009bd735d02ade13ae3ae4970702
+z
+Jsrc/main/java/br/com/mmmsieto/financial/validation/ValidationStrategy.java,a\0\a00aca19e28b178e96e90bb3a5b4bb37a93d22f4
+{
+Ksrc/main/java/br/com/mmmsieto/financial/validation/impl/NameValidation.java,3\e\3ef6c5b3887c810c265bdd988202c3157c90d395
+{
+Ksrc/main/java/br/com/mmmsieto/financial/validation/impl/UserValidation.java,0\0\003b0af2fe9e886ca5e5cfd81c770f24e9dfd70d
+q
+Asrc/main/java/br/com/mmmsieto/financial/annotation/Mandatory.java,e\0\e0c2eed559fdd9fbd987f4fa9900d181b2be7a81
+}
+Msrc/main/java/br/com/mmmsieto/financial/annotation/cache/ValidationCache.java,c\e\ce460e64fc5f179880b3e246cc8bf51800076e9d
+{
+Ksrc/main/java/br/com/mmmsieto/financial/annotation/validator/Validator.java,6\1\61ce5de606719f8d8cb09058feb11c3b3ae5bc20

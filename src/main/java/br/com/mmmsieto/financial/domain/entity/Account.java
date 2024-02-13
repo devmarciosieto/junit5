@@ -1,7 +1,12 @@
 package br.com.mmmsieto.financial.domain.entity;
 
 import br.com.mmmsieto.financial.domain.exceptions.ValidationException;
+import br.com.mmmsieto.financial.validation.ValidationStrategy;
+import br.com.mmmsieto.financial.validation.impl.NameValidation;
+import br.com.mmmsieto.financial.validation.impl.UserValidation;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Account {
@@ -43,13 +48,23 @@ public class Account {
         this.user = user;
     }
 
-    public static class AccountBuilder {
+    public  static class AccountBuilder {
         private Long id;
         private String name;
         private User user;
+        private final List<ValidationStrategy> validations = new ArrayList<>();
 
         public static AccountBuilder newAccount() {
-            return new AccountBuilder();
+
+            AccountBuilder builder = new AccountBuilder();
+            builder.addValidation(new NameValidation());
+            builder.addValidation(new UserValidation());
+            return builder;
+        }
+
+        public AccountBuilder addValidation(ValidationStrategy validation) {
+            this.validations.add(validation);
+            return this;
         }
 
         public AccountBuilder id(Long id) {
@@ -67,21 +82,19 @@ public class Account {
             return this;
         }
 
-        public Account build() {
-            validation();
+        public Account build() throws ValidationException {
+            for (ValidationStrategy validation : validations) {
+
+                if (validation instanceof UserValidation) {
+                    validation.validate(this.user);
+                }
+
+                if (validation instanceof NameValidation) {
+                    validation.validate(this.name);
+                }
+            }
             return new Account(id, name, user);
         }
-
-        private void validation() {
-            if (this.name == null) {
-                throw new ValidationException("Name is mandatory");
-            }
-
-            if (this.user == null) {
-                throw new ValidationException("User is mandatory");
-            }
-        }
-
     }
 
     @Override

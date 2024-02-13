@@ -1,9 +1,12 @@
 package br.com.mmmsieto.financial.domain.entity;
 
+import br.com.mmmsieto.financial.annotation.Mandatory;
 import br.com.mmmsieto.financial.domain.exceptions.ValidationException;
 
 public class User {
     private Long id;
+
+    @Mandatory
     private String name;
     private String email;
     private String password;
