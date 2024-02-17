@@ -3,7 +3,9 @@ package br.com.mmmsieto.financial.domain.entity;
 import br.com.mmmsieto.financial.annotation.Mandatory;
 import br.com.mmmsieto.financial.domain.exceptions.ValidationException;
 
-public class User {
+import java.util.Objects;
+
+public class User extends Object{
     private Long id;
 
     @Mandatory
@@ -36,6 +38,29 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        User user = (User) o;
+        return Objects.equals(getId(), user.getId()) && Objects.equals(getName(), user.getName()) && Objects.equals(getEmail(), user.getEmail()) && Objects.equals(getPassword(), user.getPassword());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getName(), getEmail(), getPassword());
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                '}';
     }
 
     private void validation() {
