@@ -1,6 +1,5 @@
 package br.com.mmmsieto.infra;
 
-import br.com.mmmsieto.builders.UserBuilderTest;
 import br.com.mmmsieto.financial.domain.entity.User;
 import br.com.mmmsieto.financial.domain.exceptions.ValidationException;
 import br.com.mmmsieto.financial.infra.UserMemoryRepository;
