@@ -37,3 +37,5 @@ v
 Fsrc/main/java/br/com/mmmsieto/financial/repository/UserRepository.java,5\5\554cce900f2e754d209b7cfa7020520eda249341
 w
 Gsrc/main/java/br/com/mmmsieto/financial/infra/UserMemoryRepository.java,e\4\e41802b4dfd3478d69e1f0b467480cff7a312b08
+€
+Psrc/test/java/br/com/mmmsieto/infra/UserServiceWithUserMemoryRepositoryTest.java,4\a\4aff6c4668406ae54ccd914cf188e731762f291d
