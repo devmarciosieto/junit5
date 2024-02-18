@@ -39,3 +39,7 @@ w
 Gsrc/main/java/br/com/mmmsieto/financial/infra/UserMemoryRepository.java,e\4\e41802b4dfd3478d69e1f0b467480cff7a312b08
 €
 Psrc/test/java/br/com/mmmsieto/infra/UserServiceWithUserMemoryRepositoryTest.java,4\a\4aff6c4668406ae54ccd914cf188e731762f291d
+j
+:src/test/java/br/com/mmmsieto/service/UserServiceTest.java,8\6\863ce37c2ef547938cdd2c34a2236f68ca137ffb
+l
+<src/test/java/br/com/mmmsieto/infra/UserDummyRepository.java,4\2\42d36a4e418017764b1c78940948b1a12c05774e
