@@ -43,3 +43,5 @@ j
 :src/test/java/br/com/mmmsieto/service/UserServiceTest.java,8\6\863ce37c2ef547938cdd2c34a2236f68ca137ffb
 l
 <src/test/java/br/com/mmmsieto/infra/UserDummyRepository.java,4\2\42d36a4e418017764b1c78940948b1a12c05774e
+p
+@src/test/java/br/com/mmmsieto/service/UserServiceMokitoTest.java,0\0\00539fd737eacf5a10d779ed6d1256fc31a33064
