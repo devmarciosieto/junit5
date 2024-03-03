@@ -1,10 +1,9 @@
-package br.com.mmmsieto.service;
+package br.com.mmmsieto.financial.service;
 
 import br.com.mmmsieto.builders.UserBuilderTest;
 import br.com.mmmsieto.financial.domain.entity.User;
 import br.com.mmmsieto.financial.domain.exceptions.ValidationException;
 import br.com.mmmsieto.financial.repository.UserRepository;
-import br.com.mmmsieto.financial.service.UserService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

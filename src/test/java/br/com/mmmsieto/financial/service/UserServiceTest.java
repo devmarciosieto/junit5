@@ -1,4 +1,4 @@
-package br.com.mmmsieto.service;
+package br.com.mmmsieto.financial.service;
 
 import br.com.mmmsieto.financial.domain.entity.User;
 import br.com.mmmsieto.financial.service.UserService;
