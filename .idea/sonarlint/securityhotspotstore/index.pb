@@ -51,3 +51,5 @@ z
 Jsrc/test/java/br/com/mmmsieto/financial/service/UserServiceMokitoTest.java,7\4\74a4e5ed24bc9dfa947ad6960c97499dde155f2d
 t
 Dsrc/test/java/br/com/mmmsieto/financial/service/UserServiceTest.java,4\a\4ac03bcdc4ea4759e86935b2f0a2b89a6a305108
+z
+Jsrc/main/java/br/com/mmmsieto/financial/service/external/AccountEvent.java,3\4\3450249a00f31fed374e4578a1a5b9680291721d
