@@ -9,6 +9,8 @@ import br.com.mmmsieto.financial.service.external.AccountEvent;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.ArgumentCaptor;
+import org.mockito.Captor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -32,6 +34,9 @@ class AccountServiceTest {
 
     @Mock
     private AccountEvent event;
+
+    @Captor
+    private ArgumentCaptor<Account> accountArgumentCaptor;
 
     @Test
     @DisplayName("Should save account with success")
@@ -60,6 +65,8 @@ class AccountServiceTest {
         Account savedAccount = accountService.save(accountToSave);
         assertNotNull(savedAccount.getId());
 
+        verify(accountRepository).save(accountArgumentCaptor.capture());
+        System.out.println(accountArgumentCaptor.getValue());
     }
 
     @Test
